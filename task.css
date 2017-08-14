@@ -1,0 +1,333 @@
+﻿/*#region Reset Css */
+*{padding:0;border:0;margin:0;outline:0}a,abbr,acronym,address,article,aside,audio,b,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,u,ul,var,video{background:0 0;font-family:glacial_indifferenceregular,Arial,Sans-Serif;line-height:1.4em;font-size:100%;vertical-align:baseline;text-decoration:none}body,form,html{width:100%;min-height:100%;height:auto;-webkit-font-smoothing:antialiased}body{line-height:1}article,aside,details,figcaption,figure,footer,header,section{display:block}table{border-collapse:collapse;border-spacing:0}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}input,select{border:thin solid;vertical-align:middle}a[href^="tel:"]{cursor:default}
+/*#endregion Reset Css */
+
+/*#region Global*/
+body {
+   background: #dee7eb; 
+   background: #dee7eb\0;
+   text-align: center;
+}
+
+.alignCenter{ text-align: center }
+.alignLeft  { text-align: left; }
+
+
+p b{
+   color:#ff871c;
+   font: 700 0.9375em Verdana, Arial, Sans-Serif;
+}
+
+/*#endregion Global*/
+
+/*#region Main Container*/
+.main-grid-container{
+   display:inline-block;
+   max-width:100%;
+   width: 60% \9;
+   padding: 50px 20px 40px;
+   border-top: 9px solid #dee7eb;
+   border-bottom: 9px solid #dee7eb;
+   background:#fff;      
+   text-align:center;
+   vertical-align: middle;
+}
+
+.main-grid-container h2{
+   padding: 0 0 24px;
+   color:#404448;
+   font: 400 1.8125em/1em Oswald, Verdana, Arial, Sans-Serif;
+}
+
+.main-grid-container h2 span{
+   color:#404448;
+   font: 300 1em/1em Oswald, Verdana, Arial, Sans-Serif;
+}
+
+.main-grid-container  p{
+   padding: 0 0 27px;
+   color:#454545;
+   font:400 0.9375em/1.9em Verdana, Arial, Sans-Serif;
+}
+
+.roulete{
+   display:inline-block;
+   padding:10px;
+   border:1px solid #cccccc;
+   margin:10px auto;
+   text-align:center
+}
+
+.roulete img{ width: 100% }
+
+.roulete a{
+   display:block;
+   color: #23a0c9;
+   font: 700 0.918em/1.6em Verdana, Arial, Sans-Serif;
+   text-decoration: underline;
+}
+
+.roulete a:hover{ text-decoration:none }
+
+.border-outline-shadow{
+   padding:6px;
+   border: 1px solid #ccc;
+   outline: 6px solid #fff;
+   -webkit-box-shadow: 1px 0px 12px 4px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow:    1px 0px 12px 4px rgba(0, 0, 0, 0.5);
+   box-shadow:         1px 0px 12px 4px rgba(0, 0, 0, 0.5);
+   vertical-align:top;
+}
+
+.left-side{
+   display:inline-block;
+   width:196px;
+   padding: 20px;
+   margin: 0 0 28px 0;
+   text-align:center
+}
+
+.left-side img{ max-width:100% }
+
+.right-side{
+   display: inline-block;
+   width: 90%;
+   padding: 18px;
+   margin: 10px auto 20px;
+   text-align: center;
+}
+
+.middle-part{ display:inline-block; width:100% }
+
+.main-grid-container .repeater-h2, .sidebar .repeater-h2{
+   padding:0 0 8px;
+   color: #23a0c9;
+   font: 700 2.125em/1em Oswald, Verdana, Arial, Sans-Serif;
+}
+
+.main-grid-container .repeater-h2 span, .sidebar .repeater-h2 span{
+   color: #333333;
+   font: 700 1em/1em Oswald, Verdana, Arial, Sans-Serif;
+}
+
+.main-grid-container .repeater-p , .sidebar .repeater-p {
+   padding: 0;
+   color:#343434;
+   font: 400 1.3125em/1em Roboto Slab, Verdana, Arial, Sans-Serif;
+ }
+
+.play-now-btn{
+   position:relative;
+   display:inline-block;
+   width: 50%;
+   padding: 14px 0;
+   -webkit-box-shadow: 0px 2px 0px 0px rgba(230, 108, 50, 1);
+   -moz-box-shadow:    0px 2px 0px 0px rgba(230, 108, 50, 1);
+   box-shadow:        0px 2px 0px 0px rgba(230, 108, 50, 1);
+   border-radius: 6px;
+   margin:5px 0 0 0;
+   background:#fc9032;
+   color:#fff;
+   font: 700 1.3125em/1em Roboto Slab, Verdana, Arial, Sans-Serif;
+   text-align:center;
+   vertical-align:top;
+   -webkit-transition: all .1s ease;
+   -moz-transition: all .1s ease;
+   -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+.play-now-btn:hover{ opacity:0.9 }
+
+.play-now-btn:active {
+  position: relative;
+  top: 2px;
+ -webkit-box-shadow: 0px 2px 0px 0px rgba(230, 108, 50, 0.1);
+ -moz-box-shadow:    0px 2px 0px 0px rgba(230, 108, 50, 0.1);
+  box-shadow:        0px 2px 0px 0px rgba(230, 108, 50, 0.1);
+}
+
+.play-now-btn:after{
+  content:'';
+  position:absolute;
+  top:40%;
+  left:10%;
+  display: block;
+  width: 1px;
+  border: 5px solid transparent;
+  border-left: 10px solid #fff;
+}
+
+/*** Table Styles **/
+
+.table-fill {
+  width: 100%;
+  overflow:hidden;
+  border-collapse: collapse;
+  margin:0 auto 25px
+}
+ 
+.table-fill th {
+  width:33%;
+  padding:10px 0;
+  background:#5d6b7f;
+  border-right: 10px solid #fff;
+  border-radius:0;
+  color:#fff;
+  font:400 1.1875em Roboto Condensed, Verdana, Sans-Serif;
+  text-align:center;
+  vertical-align:middle
+}
+
+.table-fill th:last-child{ border:none }
+ 
+.table-fill tr:hover td span {
+  background:#4E5066;
+  color:#fff;
+}
+ 
+.table-fill tr:first-child { border-top:none }
+.table-fill tr:nth-child(odd) td { background:#f9f9f9 }
+.table-fill tr:hover td { background:#4E5066 }
+ 
+.table-fill td {
+  position:relative;
+  background:#fff;
+  padding:6px;
+  border-bottom: 1px solid #ccc;
+  border-right: 10px solid #fff;
+  vertical-align:middle
+}
+
+.table-fill td span{
+   display:block;
+   color:#3a3a3a;
+   font: 700 0.9375em  Verdana, Arial, Sans-Serif;
+   text-align:center;
+}
+
+.table-fill td span+span{
+   display:block;
+   color:#808080;
+   font: 400 0.9375em  Verdana, Arial, Sans-Serif;
+   text-align:center;
+}
+
+.table-fill td:after{
+   content:'';
+   position:absolute;
+   top:0;
+   bottom:0;
+   right:0;
+   width:1px;
+   height:100%;
+   background: #ccc;
+}
+
+.table-fill td:before{
+   content:'';
+   position:absolute;
+   top:0;
+   bottom:0;
+   left:0;
+   width:1px;
+   height:100%;
+   background: #ccc;
+}
+
+.table-fill td:last-child { border-right: 0px }
+
+@-moz-document url-prefix() {
+  .table-fill tbody{ border-bottom: 2px solid #ccc }
+  .table-fill td:after{ right:-5px; width:1px }
+  .table-fill td:before{ left:5px; width:1px }
+  .table-fill td:last-child:after{ right:-5px; width:1px }
+  .table-fill td:first-child:before{ left:1px; width:1px }
+  .table-fill td:first-child:after{ right:0px; width:1px}
+}
+
+/*#region Main Container*/
+
+/*#region Right Aside*/
+
+.sidebar{
+   display:inline-block;
+   width: 70%;
+   width:30% \9;
+   margin:0 0 9px;
+   border:1px solid #ccc;
+   background:#fff;
+   text-align:center;
+   vertical-align: middle
+}
+
+.sidebar aside{
+   padding:20px 4px;
+   border:1px solid #ccc;
+   outline: 4px solid #fff;
+}
+
+.sidebar  img{ margin:0 0 20px }
+.sidebar .play-now-btn{ width:65%; margin:20px 0 0 0 }
+
+.sidebar h2{
+   padding:0 0 8px;
+   color: #23a0c9;
+   font: 700 2.125em/1em Oswald, Verdana, Arial, Sans-Serif;
+}
+
+.sidebar h2 span{
+   color: #333333;
+   font: 700 1em/1em Oswald, Verdana, Arial, Sans-Serif;
+}
+
+.sidebar p{
+   padding: 0;
+   color:#343434;
+   font: 400 1.3125em/1em Roboto Slab, Verdana, Arial, Sans-Serif;
+ }
+
+/*#endregion Right Aside*/
+
+/*#region Media Queries*/
+
+@media (min-width: 1200px) {
+    .main-grid-container {
+        max-width: 60%;
+        width:60%;
+        margin-right: 5%
+    }
+    .right-side{ text-align:left }
+    .sidebar{ width: 20% }
+}
+
+@media (max-width: 1200px) and (min-width: 800px){ .sidebar{ width: 30% } .table-fill td{ font-size:0.8em } }
+
+@media (min-width: 800px) {
+   body { text-align:center }
+  .main-grid-container{ padding: 50px 50px 40px; text-align:left}
+  .roulete{ margin:10px 0 0 35px }
+  .right-side{ width:600px; margin: 0 0 28px 24px }
+  .table-fill td{ padding:20px !important }
+  .table-fill td span{ float:left; text-align:left }
+  .table-fill td span+span{ float:right; text-align:right }
+  .floatLeft { float: left }
+  .floatRight { float: right }
+}
+
+@media (min-width: 600px) {
+    .body{ font-size:16px }
+    .middle-part{ width:70% }
+    .play-now-btn{ width:29% }
+}
+
+@media (max-width: 600px) and (min-width: 320px){
+      body{font-size: 14px }
+      .main-grid-container{ padding: 50px 5px 40px }
+      .right-side{ width:85%; padding:7px }
+      .table-fill td{ font-size:0.7em }
+      .sidebar .play-now-btn, .play-now-btn,.sidebar{ width:75% }
+}
+/*#endregion Media Queries*/
+
+
